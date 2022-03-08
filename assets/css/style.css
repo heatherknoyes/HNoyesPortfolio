@@ -1,16 +1,53 @@
 * {
   background-color: aqua;
-  font-family: sans-serif;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+
+header nav {
+  float: right;
+  font-size: 20px;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
 }
 
 .about-me img {
-  width: 20%;
+  width: 50%;
   height: auto;
   border-radius: 50%;
   box-shadow: 5px 5px 5px darkblue;
 }
 
+.about-me p {
+  text-align: left;
+}
+
+.current-project h2 {
+  text-align: right;
+}
+
+.portfolio h2 {
+  text-align: left;
+}
+
+.resume {
+  text-align: right;
+}
+
 .resume iframe {
   width: 50%;
   height: 400px;
+}
+
+.contact-info h2 {
+  text-align: left;
 }
