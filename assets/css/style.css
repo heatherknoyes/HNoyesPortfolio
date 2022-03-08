@@ -1,5 +1,6 @@
 * {
   background-color: aqua;
+  font-family: sans-serif;
 }
 
 .about-me img {
@@ -7,4 +8,9 @@
   height: auto;
   border-radius: 50%;
   box-shadow: 5px 5px 5px darkblue;
+}
+
+.resume iframe {
+  width: 50%;
+  height: 400px;
 }
