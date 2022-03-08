@@ -1,0 +1,10 @@
+* {
+  background-color: aqua;
+}
+
+.about-me img {
+  width: 20%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px darkblue;
+}
