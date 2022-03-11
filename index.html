@@ -5,45 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Heather Noyes Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
   </head>
   <body>
     <header>
-      <h1>Heather Noyes Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="#nav-about-me">About Me</a></li>
-          <li><a href="#nav-current-project">Current Project</a></li>
-          <li><a href="#nav-portfolio">Portfolio</a></li>
-          <li><a href="#nav-resume">Resume</a></li>
-          <li><a href="#nav-contact-info">Contact Info</a></li>
+      <h1>Portfolio</h1>
+      <nav class="nav-bar">
+        <ul class="nav-bar">
+          <li class="nav-link"><a href="#nav-about-me">About Me</a></li>
+          <li class="nav-link">
+            <a href="#nav-current-project">Current Project</a>
+          </li>
+          <li class="nav-link"><a href="#nav-portfolio">Portfolio</a></li>
+          <li class="nav-link"><a href="#nav-resume">Resume</a></li>
+          <li class="nav-link"><a href="#nav-contact-info">Contact Info</a></li>
         </ul>
       </nav>
     </header>
     <section class="about-me">
-      <h2 id="nav-about-me">About Me</h2>
-      <table>
-        <th>
-          <img
-            src="./assets/images/HNoyesPhoto.jpg"
-            alt="A photo of Heather Noyes."
-          />
-        </th>
-        <th>
-          <p>
-            My name is Heather Noyes and I currently work at FCCI Insurance
-            Group as a Software Developer. Prior to coming into a career coding
-            I graduated from the Georgia Institute of Technology with a
-            Bachelors of Science in Biomedical Engineering. After working in the
-            medical field for some internships and professionally for a time
-            after I graduated I determined it wasn't the course I wanted for my
-            life. Outside of work I have enrolled in a coding bootcamp that has
-            enabled me to learn new technologies and practice those skills to
-            create this portfolio.
-          </p>
-        </th>
-      </table>
+      <h2>About Me</h2>
+      <div class="about-me-content">
+        <img
+          src="./assets/images/HNoyesPhoto.jpg"
+          alt="A photo of Heather Noyes."
+        />
+        <p>
+          My name is Heather Noyes and I currently work at FCCI Insurance Group
+          as a Software Developer. Prior to coming into a career coding I
+          graduated from the Georgia Institute of Technology with a Bachelors of
+          Science in Biomedical Engineering. After working in the medical field
+          for some internships and professionally for a time after I graduated I
+          determined it wasn't the course I wanted for my life. Outside of work
+          I have enrolled in a coding bootcamp that has enabled me to learn new
+          technologies and practice those skills to create this portfolio.
+        </p>
+      </div>
     </section>
     <section class="current-project">
       <h2 id="nav-current-project">Current Project</h2>
@@ -59,7 +57,7 @@
           >Heather Noyes Resume</a
         >
       </p>
-      <iframe src="./assets/downloads/HNoyesResume.pdf"> </iframe>
+      <!-- <iframe src="./assets/downloads/HNoyesResume.pdf"> </iframe> -->
     </section>
     <section class="contact-info">
       <h2 id="nav-contact-info">Contact Info</h2>
@@ -67,7 +65,7 @@
       <p>Email: heatherknoyes@gmail.com</p>
     </section>
     <footer>
-      <p>Made in memory of the phenomenal Charles... cat.</p>
+      <p>Made with HTML, CSS, and cat fur.</p>
     </footer>
   </body>
 </html>
