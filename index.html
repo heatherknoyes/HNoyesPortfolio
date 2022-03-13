@@ -15,15 +15,15 @@
       <nav class="nav-bar">
         <ul class="nav-bar">
           <li class="nav-link"><a href="#nav-about-me">About Me</a></li>
-          <li class="nav-link">
-            <a href="#nav-current-project">Current Project</a>
-          </li>
           <li class="nav-link"><a href="#nav-portfolio">Portfolio</a></li>
           <li class="nav-link"><a href="#nav-contact-info">Contact Info</a></li>
+          <li class="nav-link resume">
+            <a href="./assets/docs/HNoyesResume.pdf" download>Resume</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <section class="about-me">
+    <section id="nav-about-me" class="about-me">
       <h2>About Me</h2>
       <div class="about-me-content">
         <img
@@ -50,31 +50,72 @@
         </p>
       </div>
     </section>
-    <section class="current-project">
-      <h2 id="nav-current-project">Current Project</h2>
+    <section class="portfolio">
+      <h2 id="nav-portfolio">Portfolio Projects</h2>
+      <div class="portfolio-content">
+        <!-- <div class="project">
+          <p>
+            This is my CSS Cheat Sheet project. It was my first project with
+            advanced CSS. I am going to make this larger by putting a grow item
+            in my CSS file when you hover over the project.
+          </p> 
+          <a href="https://heatherknoyes.github.io/CSSCheatSheet/">
+            <img
+              src="./assets/images/Cheetsheet.png"
+              alt="Image of CSS Cheat Sheet Project"
+          /></a>
+        </div> -->
+        <div class="project">
+          <p>This is a placeholder image for another project.</p>
+          <img
+            src="./assets/images/LakeMcDonaldPhoto.jpg"
+            alt="Project Image"
+          />
+        </div>
+        <div class="project">
+          <p>This is a placeholder image for another project.</p>
+          <img src="./assets/images/SplayPhoto.jpg" alt="Project Image" />
+        </div>
+        <div class="project">
+          <p>This is a placeholder image for another project.</p>
+          <img
+            src="./assets/images/LowerGrinnellLakePhoto.jpg"
+            alt="Project Image"
+          />
+        </div>
+        <div class="project">
+          <p>This is a placeholder image for another project.</p>
+          <img src="./assets/images/TwoCatsPhoto.jpg" alt="Project Image" />
+        </div>
+        <div class="project">
+          <p>This is a placeholder image for another project.</p>
+          <img
+            src="./assets/images/GrinnellGlacierPhoto.jpg"
+            alt="Project Image"
+          />
+        </div>
+      </div>
+
+      <p><a href="https://github.com/heatherknoyes">GitHub Link</a></p>
       <p>
         <a href=" https://github.com/heatherknoyes/HNoyesPortfolio"
           >My current project is this website.</a
         >
       </p>
     </section>
-    <section class="portfolio">
-      <h2 id="nav-portfolio">Portfolio</h2>
-      <p><a href="https://github.com/heatherknoyes">GitHub Link</a></p>
-    </section>
-    <section class="contact-info">
-      <h2 id="nav-contact-info">Contact Info</h2>
-      <p>Heather Noyes</p>
-      <p>
-        Email:
-        <a href="mailto:heatherknoyes@gmail.com">heatherknoyes@gmail.com</a>
-      </p>
-      <p>
-        Download my resume here:
-        <a href="./assets/docs/HNoyesResume.pdf" download
-          >Heather Noyes Resume</a
-        >
-      </p>
+    <section id="nav-contact-info" class="contact-info">
+      <h2>Contact Info</h2>
+      <div class="contact-text">
+        <p>Heather Noyes</p>
+        <p>
+          Email:
+          <a href="mailto:heatherknoyes@gmail.com">heatherknoyes@gmail.com</a>
+        </p>
+        <p>
+          LinkedIn Profile:
+          <a href="www.linkedin.com/in/heatherknoyes">linkedin</a>
+        </p>
+      </div>
     </section>
     <footer>
       <p>Made with HTML, CSS, and cat fur.</p>

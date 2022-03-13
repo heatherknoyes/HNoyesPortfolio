@@ -5,9 +5,8 @@
    2.0 - Header
    3.0 - Body
       3.1 - About Me Section
-      3.2 - Current Project Section
-      3.3 - Portfolio Section
-      3.4 - Contact Info Section
+      3.2 - Portfolio Section
+      3.3 - Contact Info Section
    4.0 - Footer
    5.0 - Media Queries
       5.1 - Medium Screens
@@ -16,8 +15,11 @@
 
 /*** 1.0 - Globals ***/
 :root {
-  --light: rgb(221, 200, 229);
-  --dark: rgb(104, 61, 100);
+  --light: #bbbdf6;
+  --dark: #625f63;
+  --secondLight: #625f63;
+  --middle: #797a9e;
+  --secondDark: #72727e;
 }
 
 * {
@@ -40,7 +42,7 @@ html {
 
 h2,
 h3 {
-  margin: 2rem 0 0 2rem;
+  margin: 2rem 2rem 0 2rem;
   color: var(--light);
 }
 
@@ -72,9 +74,9 @@ header {
 }
 
 header h1 {
+  margin: 0 0 0 0;
   display: flex;
   justify-content: center;
-  margin-left: 0;
 }
 
 header .nav-bar {
@@ -128,16 +130,15 @@ header .nav-bar {
 }
 
 .about-me h2,
-.current-project h2,
 .portfolio h2,
 .contact-info h2 {
   text-align: left;
   border-bottom: solid;
 }
 
-/*** 3.2 - Current Project ***/
-/*** 3.3 - Portfolio ***/
-/*** 3.4 - Contact Info ***/
+/*** 3.2 - Portfolio ***/
+
+/*** 3.3 - Contact Info ***/
 
 /*** 4.0 - Footer ***/
 footer {
@@ -150,21 +151,7 @@ footer {
 
 /*** 5.1 - Medium Screens ***/
 @media screen and (min-width: 768px) {
-  .about-me img {
-    width: 50%;
-  }
-
-  .about-me-content p {
-    max-width: 50%;
-    margin: 2rem;
-  }
-
-  .about-me-content {
-    flex-wrap: nowrap;
-  }
-
   header h1 {
-    margin-left: 0;
     display: flex;
     justify-content: center;
   }
@@ -179,6 +166,40 @@ footer {
   .nav-link {
     margin: 0 1.5rem 1rem 0;
   }
+
+  .about-me img {
+    width: 50%;
+  }
+
+  .about-me-content p {
+    max-width: 50%;
+    margin: 2rem;
+  }
+
+  .about-me-content {
+    flex-wrap: nowrap;
+  }
+
+  /* .portfolio .portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2rem;
+  }
+
+  .project {
+    max-width: 33.333%;
+  }
+
+  .project img {
+    width: 100%;
+    height: auto;
+    border-color: var(--light);
+    box-shadow: 0 0 1.5rem var(--light);
+    border-radius: 5%;
+    margin: 2rem 2rem 2rem 2rem;
+  } */
 }
 
 /*** 5.2 - Large Screens ***/
@@ -186,6 +207,20 @@ footer {
   header {
     width: 100%;
     /* margin-left: 0; */
+  }
+
+  header h1 {
+    text-align: left;
+    display: inline-block;
+    margin-left: 2rem;
+  }
+
+  header .nav-bar {
+    float: right;
+  }
+
+  .nav-link {
+    margin: 2rem 2rem 0rem 0;
   }
 
   .about-me img {
@@ -201,20 +236,37 @@ footer {
     flex-wrap: nowrap;
   }
 
-  header h1 {
-    text-align: left;
-    display: inline-block;
-    margin-left: 2rem;
-  }
-
-  header .nav-bar {
-    float: right;
+  .portfolio .portfolio-content {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
+    margin-right: 2rem;
   }
 
-  .nav-link {
-    margin: 2.5rem 1.5rem 0rem 0;
+  .project {
+    max-width: 33.333%;
+    margin: 0 0 0 4rem;
+  }
+
+  .project img {
+    width: 100%;
+    height: auto;
+    border-color: var(--light);
+    /* box-shadow: 0 0 1.5rem var(--light); */
+    border-radius: 10%;
+  }
+
+  .project p {
+    margin: 2rem 0 0 0;
+    text-align: center;
+  }
+
+  .contact-text {
+    margin-top: 2rem;
+  }
+
+  .contact-info p {
+    margin: 0 0 0 2rem;
   }
 }
