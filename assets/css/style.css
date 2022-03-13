@@ -137,6 +137,43 @@ header .nav-bar {
 }
 
 /*** 3.2 - Portfolio ***/
+.portfolio .portfolio-content {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.project {
+  max-width: 100%;
+  align-self: center;
+  margin: 2rem 0 0 2rem;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-color: var(--light);
+  border-radius: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project p {
+  position: relative;
+  top: -8rem;
+  max-width: 50%;
+  text-align: center;
+  border-radius: 0 1rem 1rem 0;
+  margin: 0 0 -3rem 0;
+}
+
+.project:hover {
+  background-color: yellow;
+}
 
 /*** 3.3 - Contact Info ***/
 
@@ -180,26 +217,10 @@ footer {
     flex-wrap: nowrap;
   }
 
-  /* .portfolio .portfolio-content {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 2rem;
-  }
-
   .project {
-    max-width: 33.333%;
+    max-width: 50%;
+    margin: 2rem 0 0 1rem;
   }
-
-  .project img {
-    width: 100%;
-    height: auto;
-    border-color: var(--light);
-    box-shadow: 0 0 1.5rem var(--light);
-    border-radius: 5%;
-    margin: 2rem 2rem 2rem 2rem;
-  } */
 }
 
 /*** 5.2 - Large Screens ***/
@@ -236,30 +257,16 @@ footer {
     flex-wrap: nowrap;
   }
 
-  .portfolio .portfolio-content {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 2rem;
+  .project {
+    max-width: 32%;
   }
 
-  .project {
-    max-width: 33.333%;
-    margin: 0 0 0 4rem;
+  .project p {
+    margin: 0 0 -5rem 0;
   }
 
   .project img {
     width: 100%;
-    height: auto;
-    border-color: var(--light);
-    /* box-shadow: 0 0 1.5rem var(--light); */
-    border-radius: 10%;
-  }
-
-  .project p {
-    margin: 2rem 0 0 0;
-    text-align: center;
   }
 
   .contact-text {
