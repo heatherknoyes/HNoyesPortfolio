@@ -202,6 +202,10 @@ footer {
   height: 2.5rem;
 }
 
+i {
+  color: var(--light);
+}
+
 /*** 5.1 - Medium Screens ***/
 @media screen and (min-width: 768px) {
   header h1 {
