@@ -40,12 +40,6 @@ html {
   scroll-behavior: smooth;
 }
 
-h2,
-h3 {
-  margin: 2rem 2rem 0 2rem;
-  color: var(--light);
-}
-
 h1 {
   margin: 2.5rem 0 0 2rem;
   font-size: 4rem;
@@ -55,14 +49,17 @@ h1 {
 
 h2 {
   font-size: 3rem;
+  margin: 2rem 2rem 0 2rem;
+  color: var(--light);
 }
 
 h3 {
   font-size: 2rem;
+  color: var(--light);
 }
 
 p {
-  margin: 2rem;
+  /* margin: 2rem; */
   font-size: 1.5rem;
   color: var(--light);
 }
@@ -70,7 +67,6 @@ p {
 /*** 2.0 - Header ***/
 header {
   background-color: var(--light);
-  /* box-shadow: 0 1rem 1.5rem var(--light); */
 }
 
 header h1 {
@@ -84,7 +80,6 @@ header .nav-bar {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  /* color: var(--light); */
   background-color: var(--light);
 }
 
@@ -142,18 +137,25 @@ header .nav-bar {
   flex: 1;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
 }
 
-.project {
+.project,
+.first-project {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem 2rem;
   max-width: 100%;
   align-self: center;
-  margin: 2rem 0 0 2rem;
+  margin: 2rem 0 0 0;
 }
 
-.project img {
+.project img,
+.first-project img {
   width: 100%;
   height: auto;
   border-color: var(--light);
@@ -162,17 +164,27 @@ header .nav-bar {
   margin-right: auto;
 }
 
-.project p {
-  position: relative;
-  top: -8rem;
+.first-project h3,
+.project h3 {
+  border-radius: 0 1rem 0 0;
   max-width: 50%;
-  text-align: center;
-  border-radius: 0 1rem 1rem 0;
-  margin: 0 0 -3rem 0;
+  position: relative;
+  top: -16rem;
 }
 
-.project:hover {
-  background-color: yellow;
+.project p,
+.first-project p {
+  position: relative;
+  top: -16rem;
+  max-width: 50%;
+  border-radius: 0 0 1rem 0;
+  /* margin: 0 0 -5rem 0; */
+}
+
+.project img:hover,
+.project p:hover,
+.project a:hover {
+  color: yellow;
 }
 
 /*** 3.3 - Contact Info ***/
@@ -218,7 +230,7 @@ footer {
   }
 
   .project {
-    max-width: 50%;
+    max-width: 48%;
     margin: 2rem 0 0 1rem;
   }
 }
@@ -227,7 +239,6 @@ footer {
 @media screen and (min-width: 992px) {
   header {
     width: 100%;
-    /* margin-left: 0; */
   }
 
   header h1 {
@@ -258,11 +269,16 @@ footer {
   }
 
   .project {
+    flex: 0 0 32%;
     max-width: 32%;
   }
 
   .project p {
-    margin: 0 0 -5rem 0;
+    /* margin: 0 0 -5rem 0; */
+  }
+
+  .project h3 {
+    bottom: 5rem;
   }
 
   .project img {
