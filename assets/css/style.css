@@ -90,7 +90,7 @@ header .nav-bar {
 
 .nav-link a {
   font-size: 2.5rem;
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--dark);
   background-color: var(--light);
 }
@@ -137,9 +137,8 @@ header .nav-bar {
   flex: 1;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  /* margin-right: 2rem; */
+  justify-content: space-around;
+  /* align-items: center; */
 }
 
 .project,
@@ -148,37 +147,38 @@ header .nav-bar {
   min-height: 100%;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 1rem 2rem;
-  max-width: 100%;
+  /* max-width: fit-content; */
   align-self: center;
-  margin: 2rem 0 0 0;
+  padding: 2rem 2rem 0 2rem;
 }
 
 .project img,
 .first-project img {
   width: 100%;
   height: auto;
-  border-color: var(--light);
-  border-radius: 10%;
-  margin-left: auto;
-  margin-right: auto;
+  border: solid var(--light);
 }
 
-.first-project h3,
-.project h3 {
-  border-radius: 0 1rem 0 0;
-  max-width: 50%;
-  position: relative;
-  top: -16rem;
+.project-text h3 {
+  background-color: var(--secondDark);
+  border-top-right-radius: 1rem;
 }
 
-.project p,
-.first-project p {
+.project-text p {
+  background-color: var(--secondDark);
+  border-bottom-right-radius: 1rem;
+}
+
+.project-text {
   position: relative;
-  top: -16rem;
-  max-width: 50%;
-  border-radius: 0 0 1rem 0;
-  /* margin: 0 0 -5rem 0; */
+  display: inline-block;
+  top: -10rem;
+  padding: 0 0.5rem;
+  border-radius: 0 1rem 1rem 0;
+  max-width: max-content;
+  border: solid var(--light);
+  background-color: var(--secondDark);
+  margin-bottom: -5.85rem;
 }
 
 .project img:hover,
@@ -188,10 +188,14 @@ header .nav-bar {
 }
 
 /*** 3.3 - Contact Info ***/
+.contact-text {
+  padding: 2rem 0 2rem 2rem;
+}
 
 /*** 4.0 - Footer ***/
 footer {
   text-align: center;
+  font-style: oblique;
   position: relative;
   bottom: 0;
   width: 100%;
@@ -229,9 +233,14 @@ footer {
     flex-wrap: nowrap;
   }
 
+  .first-project {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
   .project {
-    max-width: 48%;
-    margin: 2rem 0 0 1rem;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
@@ -269,27 +278,7 @@ footer {
   }
 
   .project {
-    flex: 0 0 32%;
-    max-width: 32%;
-  }
-
-  .project p {
-    /* margin: 0 0 -5rem 0; */
-  }
-
-  .project h3 {
-    bottom: 5rem;
-  }
-
-  .project img {
-    width: 100%;
-  }
-
-  .contact-text {
-    margin-top: 2rem;
-  }
-
-  .contact-info p {
-    margin: 0 0 0 2rem;
+    flex: 0 0 30%;
+    max-width: 30%;
   }
 }
