@@ -23,12 +23,10 @@
 }
 
 * {
-  background-color: var(--light);
   color: var(--purple);
   font-family: "Segoe UI", "Frutiger", "Dejavu Sans", "Helvetica Neue", Arial,
     sans-serif;
   background-color: var(--dark);
-  font-family: sans-serif;
   font-size: 1.75rem;
   line-height: 1.5;
 }
@@ -67,6 +65,7 @@ p {
 /*** 2.0 - Header ***/
 header {
   background-color: var(--light);
+  padding: 2rem 0 0 0;
 }
 
 header h1 {
@@ -137,8 +136,7 @@ header .nav-bar {
   flex: 1;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
-  /* align-items: center; */
+  justify-content: space-evenly;
 }
 
 .project,
@@ -147,7 +145,6 @@ header .nav-bar {
   min-height: 100%;
   flex-direction: column;
   justify-content: flex-start;
-  /* max-width: fit-content; */
   align-self: center;
   padding: 2rem 2rem 0 2rem;
 }
@@ -156,16 +153,16 @@ header .nav-bar {
 .first-project img {
   width: 100%;
   height: auto;
-  border: solid var(--light);
+  border: solid var(--middle);
 }
 
 .project-text h3 {
-  background-color: var(--secondDark);
+  background-color: var(--dark);
   border-top-right-radius: 1rem;
 }
 
 .project-text p {
-  background-color: var(--secondDark);
+  background-color: var(--dark);
   border-bottom-right-radius: 1rem;
 }
 
@@ -176,15 +173,14 @@ header .nav-bar {
   padding: 0 0.5rem;
   border-radius: 0 1rem 1rem 0;
   max-width: max-content;
-  border: solid var(--light);
-  background-color: var(--secondDark);
+  border: solid var(--middle);
+  background-color: var(--dark);
   margin-bottom: -5.85rem;
 }
 
-.project img:hover,
-.project p:hover,
-.project a:hover {
-  color: yellow;
+.project:hover,
+.first-project:hover {
+  opacity: 50%;
 }
 
 /*** 3.3 - Contact Info ***/
