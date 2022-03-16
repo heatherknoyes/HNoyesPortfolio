@@ -58,7 +58,8 @@ h3 {
   color: var(--light);
 }
 
-p {
+p,
+span {
   font-size: 1.5rem;
   color: var(--light);
 }
@@ -133,6 +134,10 @@ main {
 }
 
 /*** 3.2 - Portfolio ***/
+main a {
+  text-decoration: none;
+}
+
 .portfolio .portfolio-content {
   display: flex;
   flex: 1;
