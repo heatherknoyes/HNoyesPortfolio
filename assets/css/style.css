@@ -45,6 +45,11 @@ body {
 
 h2, h3, p, span, a {
   color: var(--light);
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 /*** 2.0 - Header ***/
@@ -80,14 +85,10 @@ main {
 .about-me h2,
 .portfolio h2,
 .contact-info h2 {
-  border-bottom: dashed;
+  border-bottom: solid;
 }
 
 /*** 3.2 - Portfolio ***/
-main a {
-  text-decoration: none;
-}
-
 .first-project {
   max-width: 100%;
 }
@@ -131,6 +132,11 @@ main a {
 
 i {
   color: var(--light);
+}
+
+i:hover,
+.contact-text a:hover {
+  color: var(--middle);
 }
 
 /*** 4.0 - Footer ***/
