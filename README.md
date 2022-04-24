@@ -44,4 +44,4 @@ You can view the deployed application here: https://heatherknoyes.github.io/HNoy
 
 ## License
 
-No license.
+Distributed under the MIT License. See LICENSE.txt for more information.
