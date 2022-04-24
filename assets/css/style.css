@@ -43,7 +43,7 @@ body {
   background-color: var(--dark);
 }
 
-h2, h3, p, span {
+h2, h3, p, span, a {
   color: var(--light);
 }
 
@@ -128,9 +128,6 @@ main a {
 }
 
 /*** 3.3 - Contact Info ***/
-.contact-text {
-  padding: 2rem 0 2rem 2rem;
-}
 
 i {
   color: var(--light);
