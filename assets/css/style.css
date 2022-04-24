@@ -88,22 +88,22 @@ main a {
   text-decoration: none;
 }
 
-.portfolio .portfolio-content {
+/* .portfolio .portfolio-content {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
-}
+} */
 
 .project,
 .first-project {
-  display: flex;
-  max-width: 80%;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-self: center;
-  margin: 2rem 2rem 0 2rem;
+  /* display: flex; */
+  /* max-width: 80%; */
+  /* flex-direction: column;
+  justify-content: flex-start; */
+  /* align-self: center; */
+  /* margin: 2rem 2rem 0 2rem; */
 }
 
 .first-project {
