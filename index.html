@@ -3,67 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Heather Noyes Portfolio</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
   </head>
   <body>
-    <!--Navigation bar to the right and title to the left-->
-    <header>
-      <h1>Portfolio</h1>
-      <nav class="nav-bar">
-        <ul class="nav-bar">
-          <li class="nav-link"><a href="#nav-about-me">About Me</a></li>
-          <li class="nav-link"><a href="#nav-portfolio">Portfolio</a></li>
-          <li class="nav-link"><a href="#nav-contact-info">Contact Info</a></li>
-          <li class="nav-link resume">
-            <a href="./assets/docs/HNoyesResume.pdf" download>Resume</a>
-          </li>
-        </ul>
-      </nav>
+    <header class="d-flex flex-wrap justify-content-center lightBackground">
+      <h1 class="d-flex fs-1 lightBackground">Portfolio</h1>
+      <ul class="nav nav-pills d-flex justify-content-center lightBackground">
+        <li class="nav-item lightBackground">
+          <a href="#nav-about-me" class="nav-link fs-2">About Me</a>
+        </li>
+        <li class="nav-item lightBackground">
+          <a href="#nav-portfolio" class="nav-link fs-2">Portfolio</a>
+        </li>
+        <li class="nav-item lightBackground">
+          <a href="#nav-contact-info" class="nav-link fs-2">Contact Info</a>
+        </li>
+        <li class="nav-item lightBackground">
+          <a
+            href="./assets/docs/HNoyesResume.pdf"
+            class="nav-link fs-2"
+            download
+            >Resume</a
+          >
+        </li>
+      </ul>
     </header>
 
-    <main>
+    <main class="container">
       <!--About me section that has a photo of myself as well as brief biography.-->
       <section id="nav-about-me" class="about-me">
         <h2>About Me</h2>
-        <div class="about-me-content">
-          <img
-            src="./assets/images/HNoyesPhoto.jpg"
-            alt="A photo of Heather Noyes."
-          />
-          <p>
-            My name is Heather Noyes and I currently work at FCCI Insurance
-            Group as a Software Developer. I graduated from the Georgia
-            Institute of Technology with a Bachelors of Science in Biomedical
-            Engineering. After working in the medical field professionally after
-            I graduated I determined it wasn't the career I wanted. About four
-            years ago I put in the work to change my career and became a
-            Software Developer using the skills that I learned from my Computer
-            Science minor at Georgia Tech.
-            <br />
-            <br />
-            Outside of work I have enrolled in a coding bootcamp that has
-            enabled me to learn new technologies and practice those skills to
-            create this portfolio. For hobbies I love to knit, cook, bake bread,
-            and host events for my friends and family. I recently moved back to
-            the Atlanta area from Sarasota, Florida and am enjoying the cooler
-            weather with some Appalachian trail hiking.
-          </p>
+        <div class="about-me-content d-flex flex-wrap">
+          <div
+            class="col-12 col-md-6 col-lg-4 my-sm-4 d-flex justify-content-center"
+          >
+            <img
+              src="./assets/images/HNoyesPhoto.jpg"
+              class="img-fluid"
+              alt="A photo of Heather Noyes."
+            />
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-8 my-sm-4 d-flex align-items-center"
+          >
+            <p>
+              My name is Heather Noyes and I currently work at FCCI Insurance
+              Group as a Software Developer. I graduated from the Georgia
+              Institute of Technology with a Bachelors of Science in Biomedical
+              Engineering. After working in the medical field professionally
+              after I graduated I determined it wasn't the career I wanted.
+              About four years ago I put in the work to change my career and
+              became a Software Developer using the skills that I learned from
+              my Computer Science minor at Georgia Tech.
+              <br />
+              <br />
+              Outside of work I have enrolled in a coding bootcamp that has
+              enabled me to learn new technologies and practice those skills to
+              create this portfolio. For hobbies I love to knit, cook, bake
+              bread, and host events for my friends and family. I recently moved
+              back to the Atlanta area from Sarasota, Florida and am enjoying
+              the cooler weather with some Appalachian trail hiking.
+            </p>
+          </div>
         </div>
       </section>
 
       <!--Each article is a seperate project container with separate divs that only hold the text that goes over the photo.-->
-      <section class="portfolio">
+      <section class="portfolio mt-5">
         <h2 id="nav-portfolio">Portfolio Projects</h2>
         <div class="portfolio-content">
-          <div class="first-project">
+          <div class="first-project card">
             <a href="https://heatherknoyes.github.io/CSSCheatSheet/">
               <img
                 src="./assets/images/Cheetsheet.png"
@@ -77,7 +100,7 @@
           </div>
           <a
             href="https://heatherknoyes.github.io/PasswordGenerator/"
-            class="project"
+            class="project col-4 card"
           >
             <img
               src="./assets/images/passwordGenerator.png"
@@ -90,7 +113,7 @@
           </a>
           <a
             href="https://heatherknoyes.github.io/CodingQuestionsQuiz/"
-            class="project"
+            class="project col-4"
           >
             <img
               src="./assets/images/QuizGIF.gif"
@@ -103,7 +126,7 @@
           </a>
           <a
             href="https://heatherknoyes.github.io/WorkDayScheduler/"
-            class="project"
+            class="project col-4"
           >
             <img
               src="./assets/images/WorkDaySchedulerGIF.gif"
@@ -114,14 +137,14 @@
               <span>HTML/CSS/Javascript</span>
             </div>
           </a>
-          <a href="#" class="project">
+          <a href="#" class="project col-4">
             <img src="./assets/images/TwoCatsPhoto.jpg" alt="Project Image" />
             <div class="project-text">
               <h3>Project 4</h3>
               <span>This is a placeholder image for another project.</span>
             </div>
           </a>
-          <a href="#" class="project">
+          <a href="#" class="project col-4">
             <img
               src="./assets/images/GrinnellGlacierPhoto.jpg"
               alt="Project Image"
@@ -136,7 +159,7 @@
 
       <!--Holds all links and contact information-->
       <section id="nav-contact-info" class="contact-info">
-        <h2>Contact Info</h2>
+        <h2 class="mt-5">Contact Info</h2>
         <div class="contact-text">
           <p>Heather Noyes</p>
           <p>
@@ -160,4 +183,9 @@
       <p>&copy; 2022 - Heather Noyes</p>
     </footer>
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
 </html>

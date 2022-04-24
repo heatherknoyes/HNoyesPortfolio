@@ -39,97 +39,47 @@ html {
   scroll-behavior: smooth;
 }
 
-h1 {
-  margin: 2.5rem 0 0 2rem;
-  font-size: 4rem;
-  color: var(--dark);
-  background-color: var(--light);
-  text-align: center;
+body {
+  background-color: var(--dark);
 }
 
-h2 {
-  font-size: 3rem;
-  margin: 2rem 2rem 0 2rem;
-  color: var(--light);
-}
-
-h3 {
-  font-size: 2rem;
-  color: var(--light);
-}
-
-p,
-span {
-  font-size: 1.5rem;
+h2, h3, p, span {
   color: var(--light);
 }
 
 /*** 2.0 - Header ***/
 header {
   background-color: var(--light);
-  padding: 2rem 0 2rem 0;
 }
 
-header h1 {
-  margin: 0 0 0 0;
-}
-
-header .nav-bar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--light);
+.fs-1 {
+  color: var(--dark);
 }
 
 .nav-link {
-  display: flex;
+  font-size: 2rem;
+  color: var(--dark);
 }
 
-.nav-link a {
-  display: flex;
-  font-size: 2.5rem;
-  text-decoration: underline;
-  color: var(--dark);
+.lightBackground {
   background-color: var(--light);
 }
 
 main {
-  margin: 2rem;
+  margin: 2rem 0;
 }
 
 /*** 3.1 - About Me ***/
-.about-me-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  margin: 2rem;
-}
-
 .about-me-content img {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  outline: none;
+  width: 90%;
   border-color: var(--light);
   box-shadow: 0 0 1.5rem var(--light);
   border-radius: 50%;
 }
 
-.about-me-content p {
-  display: flex;
-  max-width: 100%;
-  text-align: left;
-  font-size: 2rem;
-  justify-content: space-around;
-  align-items: center;
-  margin: 2rem 0 0 0;
-}
-
 .about-me h2,
 .portfolio h2,
 .contact-info h2 {
-  text-align: left;
   border-bottom: dashed;
 }
 
@@ -215,7 +165,7 @@ footer {
 }
 
 /*** 5.1 - Medium Screens ***/
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   header h1 {
     display: flex;
     justify-content: center;
@@ -253,10 +203,10 @@ footer {
   .project {
     max-width: 50%;
   }
-}
+} */
 
 /*** 5.2 - Large Screens ***/
-@media screen and (min-width: 992px) {
+/*@media screen and (min-width: 992px) {
   header h1 {
     text-align: left;
     display: inline-block;
@@ -284,4 +234,4 @@ footer {
     flex: 0 0 30%;
     max-width: 30%;
   }
-}
+} */
