@@ -57,6 +57,10 @@ header {
   background-color: var(--light);
 }
 
+.navbar-toggler {
+  color: var(--dark);
+}
+
 .fs-1 {
   color: var(--dark);
 }
@@ -64,10 +68,15 @@ header {
 .nav-link {
   font-size: 2rem;
   color: var(--dark);
+  background-color: var(--light);
 }
 
 .lightBackground {
   background-color: var(--light);
+}
+
+.darkText {
+  color: var(--dark);
 }
 
 main {

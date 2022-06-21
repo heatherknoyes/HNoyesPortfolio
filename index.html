@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Heather Noyes Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
     <link
@@ -20,29 +22,39 @@
     <link rel="icon" href="./assets/images/favicon.png" />
   </head>
   <body>
-    <header class="d-flex flex-wrap justify-content-center lightBackground">
-      <h1 class="d-flex fs-1 w-100 justify-content-center lightBackground">
-        Heather Noyes
-      </h1>
-      <ul class="nav nav-pills d-flex justify-content-center lightBackground">
-        <li class="nav-item lightBackground">
-          <a href="#nav-about-me" class="nav-link fs-2">About Me</a>
-        </li>
-        <li class="nav-item lightBackground">
-          <a href="#nav-portfolio" class="nav-link fs-2">Portfolio</a>
-        </li>
-        <li class="nav-item lightBackground">
-          <a href="#nav-contact-info" class="nav-link fs-2">Contact Info</a>
-        </li>
-        <li class="nav-item lightBackground">
-          <a
-            href="./assets/docs/HNoyesResume.pdf"
-            class="nav-link fs-2"
-            download
-            >Resume</a
-          >
-        </li>
-      </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg lightBackground">
+        <h2 class="nav-link" href="#">Heather Noyes</h2>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon darkText lightBackground"></span>
+        </button>
+        <div class="collapse navbar-collapse lightBackground" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#nav-about-me">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nav-portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nav-contact-info">Contact Info</a>
+            </li>
+            <li class="nav-item">
+              <a href="./assets/docs/HNoyesResume.pdf" class="nav-link" download
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main class="container">
@@ -85,90 +97,73 @@
       <!--Each article is a seperate project container with separate divs that only hold the text that goes over the photo.-->
       <section class="portfolio">
         <h2 id="nav-portfolio my-5">Portfolio Projects</h2>
-        <div class="first-project">
-          <a href="https://heatherknoyes.github.io/recall-near-me/">
-            <img
-              src="./assets/images/FoodRecall.gif"
-              class="img-fluid"
-              alt="Image of First Project: FDA Food Recall"
-            />
-            <div class="project-text">
-              <h3>First Project: FDA Food Recall</h3>
-              <p>HTML/CSS, W3.CSS, Javascript</p>
-            </div>
-          </a>
+        <div class="card">
+          <img
+            src="./assets/images/FoodRecall.gif"
+            class="card-img-top img-fluid"
+            alt="Image of First Project: FDA Food Recall"
+          />
+          <div class="card-body">
+            <h5 class="card-title">First Project: FDA Food Recall</h5>
+            <p class="card-text">HTML/CSS, W3.CSS, Javascript</p>
+          </div>
         </div>
-        <div class="portfolio-content d-flex flex-wrap align-items-center">
-          <a
-            href="https://heatherknoyes.github.io/PasswordGenerator/"
-            class="project col-sm-12 col-md-6 px-4"
-          >
+        <div class="card-deck">
+          <div class="card project col-sm-12 col-md-6 px-4">
             <img
+              class="card-img-top img-fluid"
               src="./assets/images/passwordGenerator.png"
-              class="img-fluid"
               alt="Image of Password Generator: An app to generate a password based on user specifications"
             />
-            <div class="project-text">
-              <h3>Password Generator</h3>
-              <span>Javascript</span>
+            <div class="card-body">
+              <h5 class="card-title">Password Generator</h5>
+              <p class="card-text">Javascript</p>
             </div>
-          </a>
-          <a
-            href="https://heatherknoyes.github.io/CodingQuestionsQuiz/"
-            class="project col-sm-12 col-md-6 px-4"
-          >
+          </div>
+          <div class="card project col-sm-12 col-md-6 px-4">
             <img
+              class="card-img-top img-fluid"
               src="./assets/images/QuizGIF.gif"
-              class="img-fluid"
               alt="Small video of a Javascript quiz app"
             />
-            <div class="project-text">
-              <h3>Javascript Quiz</h3>
-              <span>HTML/CSS/Javascript</span>
+            <div class="card-body">
+              <h5 class="card-title">Javascript Quiz</h5>
+              <p class="card-text">HTML/CSS/Javascript</p>
             </div>
-          </a>
-          <a
-            href="https://heatherknoyes.github.io/WorkDayScheduler/"
-            class="project col-sm-12 col-md-6 px-4"
-          >
+          </div>
+          <div class="card project col-sm-12 col-md-6 px-4">
             <img
               src="./assets/images/WorkDaySchedulerGIF.gif"
-              class="img-fluid"
+              class="img-fluid card-img-top"
               alt="GIF image of a workday scheduling app"
             />
-            <div class="project-text">
-              <h3>Workday Scheduler</h3>
-              <span>HTML/CSS/Javascript</span>
+            <div class="card-body">
+              <h5 class="card-title">Workday Scheduler</h5>
+              <p class="card-text">HTML/CSS/Javascript</p>
             </div>
-          </a>
-          <a
-            href="https://heatherknoyes.github.io/CSSCheatSheet/"
-            class="project col-sm-12 col-md-6 px-4"
-          >
+          </div>
+          <div class="card project col-sm-12 col-md-6 px-4">
             <img
               src="./assets/images/Cheetsheet.png"
-              class="img-fluid"
+              class="img-fluid card-img-top"
               alt="Image of First Project: CSS Cheat Sheet"
             />
-            <div class="project-text">
-              <h3>CSS Cheat Sheet</h3>
-              <span>HTML/CSS</span>
+            <div class="card-body">
+              <h5 class="card-title">CSS Cheat Sheet</h5>
+              <p class="card-text">HTML/CSS</p>
             </div>
-          </a>
-          <a
-            href="https://heatherknoyes.github.io/WeatherDashboard/"
-            class="project col-sm-12 col-md-6 px-4"
-          >
+          </div>
+          <div class="card project col-sm-12 col-md-6 px-4">
             <img
               src="./assets/images/WeatherDashboardGIF.gif"
-              class="img-fluid"
+              class="img-fluid card-img-top"
               alt="Image of Weather Dashboard application"
             />
-            <div class="project-text">
-              <h3>Weather Dashboard</h3>
-              <span>HTML/CSS, Javascript, Bootstrap</span>
+            <div class="card-body">
+              <h5 class="card-title">Weather Dashboard</h5>
+              <p class="card-text">HTML/CSS, Javascript, Bootstrap</p>
             </div>
-          </a>
+          </div>
         </div>
       </section>
 
@@ -197,10 +192,20 @@
     <footer>
       <p>&copy; 2022 - Heather Noyes</p>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"
-  ></script>
 </html>
