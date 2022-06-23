@@ -43,14 +43,14 @@ body {
   background-color: var(--dark);
 }
 
-h2, h3, p, span, a {
+h2, h3, p, a {
   color: var(--light);
   text-decoration: none;
 }
 
-h2 {
+/* h2 {
   font-size: 2rem;
-}
+} */
 
 /*** 2.0 - Header ***/
 header {
@@ -100,41 +100,50 @@ main {
 /*** 3.2 - Portfolio ***/
 .first-project {
   max-width: 100%;
+  border-radius: 2rem;
 }
 
-.project img:hover,
+.card img:hover,
 .first-project img:hover {
   transition: var(--transition);
   opacity: 50%;
 }
 
-.project img,
 .first-project img {
   width: 100%;
   height: auto;
-  border: solid var(--middle);
+  /* border-radius: 2rem; */
+  /* border: solid var(--middle); */
 }
 
-.project-text h3 {
-  background-color: var(--dark);
-  border-top-right-radius: 1rem;
+img {
+  border-radius: 2rem 2rem 0 0;
 }
 
-.project-text p {
-  background-color: var(--dark);
-  border-bottom-right-radius: 1rem;
+.second-dark-background {
+  background-color: var(--secondDark);
 }
 
-.project-text {
-  position: relative;
-  display: inline-block;
-  top: -10rem;
-  padding: 0 0.5rem;
-  border-radius: 0 1rem 1rem 0;
-  max-width: max-content;
-  border: solid var(--middle);
+.card-body {
+  margin: 0;
+}
+
+.custom-card-footer {
+  border-radius: 0 0 2rem 2rem;
+}
+
+.card {
+  border-radius: 2rem;
+}
+
+.card-body {
   background-color: var(--dark);
-  margin-bottom: -5.85rem;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.card-body a:hover {
+  text-decoration-color: var(--light);
+  text-decoration: none;
 }
 
 /*** 3.3 - Contact Info ***/

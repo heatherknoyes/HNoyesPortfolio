@@ -8,18 +8,20 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>Heather Noyes Portfolio</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <header>
@@ -28,13 +30,13 @@
         <button
           class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon darkText lightBackground"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse lightBackground" id="navbarNav">
           <ul class="navbar-nav">
@@ -97,74 +99,116 @@
       <!--Each article is a seperate project container with separate divs that only hold the text that goes over the photo.-->
       <section class="portfolio">
         <h2 id="nav-portfolio my-5">Portfolio Projects</h2>
-        <div class="card">
+        <a
+          class="card first-project mt-4"
+          href="https://github.com/heatherknoyes/BarCard"
+        >
+          <img
+            class="img-fluid"
+            src="./assets/images/barcard.png"
+            alt="Image of Second Project: BarCard - A Recipe Sharing Site"
+          />
+          <div class="custom-card-footer second-dark-background p-2">
+            <h3 class="card-title second-dark-background">
+              Second Project: BarCard
+            </h3>
+            <p class="card-text second-dark-background">
+              Bootstrap, Javascript, Handlebars, Express, MySQL
+            </p>
+          </div>
+        </a>
+        <a
+          class="card mt-4"
+          href="https://github.com/heatherknoyes/recall-near-me"
+        >
           <img
             src="./assets/images/FoodRecall.gif"
-            class="card-img-top img-fluid"
+            class="img-fluid"
             alt="Image of First Project: FDA Food Recall"
           />
-          <div class="card-body">
-            <h5 class="card-title">First Project: FDA Food Recall</h5>
-            <p class="card-text">HTML/CSS, W3.CSS, Javascript</p>
+          <div class="custom-card-footer second-dark-background p-2">
+            <h3 class="card-title second-dark-background">
+              First Project: FDA Food Recall
+            </h3>
+            <p class="card-text second-dark-background">
+              HTML/CSS, W3.CSS, Javascript
+            </p>
           </div>
-        </div>
-        <div class="card-deck">
-          <div class="card project col-sm-12 col-md-6 px-4">
-            <img
-              class="card-img-top img-fluid"
-              src="./assets/images/passwordGenerator.png"
-              alt="Image of Password Generator: An app to generate a password based on user specifications"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Password Generator</h5>
-              <p class="card-text">Javascript</p>
-            </div>
+        </a>
+        <a
+          class="card mt-4"
+          href="https://github.com/heatherknoyes/PasswordGenerator"
+        >
+          <img
+            class="img-fluid"
+            src="./assets/images/passwordGenerator.png"
+            alt="Image of Password Generator: An app to generate a password based on user specifications"
+          />
+          <div class="custom-card-footer second-dark-background p-2">
+            <h3 class="card-title second-dark-background">
+              Password Generator
+            </h3>
+            <p class="card-text second-dark-background">Javascript</p>
           </div>
-          <div class="card project col-sm-12 col-md-6 px-4">
-            <img
-              class="card-img-top img-fluid"
-              src="./assets/images/QuizGIF.gif"
-              alt="Small video of a Javascript quiz app"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Javascript Quiz</h5>
-              <p class="card-text">HTML/CSS/Javascript</p>
-            </div>
+        </a>
+        <a
+          class="card mt-4"
+          href="https://github.com/heatherknoyes/CodingQuestionsQuiz"
+        >
+          <img
+            class="img-fluid"
+            src="./assets/images/QuizGIF.gif"
+            alt="Small video of a Javascript quiz app"
+          />
+          <div class="custom-card-footer second-dark-background p-2">
+            <h3 class="card-title second-dark-background">Javascript Quiz</h3>
+            <p class="card-text second-dark-background">HTML/CSS/Javascript</p>
           </div>
-          <div class="card project col-sm-12 col-md-6 px-4">
-            <img
-              src="./assets/images/WorkDaySchedulerGIF.gif"
-              class="img-fluid card-img-top"
-              alt="GIF image of a workday scheduling app"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Workday Scheduler</h5>
-              <p class="card-text">HTML/CSS/Javascript</p>
-            </div>
+        </a>
+        <a
+          class="card mt-4"
+          href="https://github.com/heatherknoyes/WorkDayScheduler"
+        >
+          <img
+            src="./assets/images/WorkDaySchedulerGIF.gif"
+            class="img-fluid"
+            alt="GIF image of a workday scheduling app"
+          />
+          <div class="custom-card-footer second-dark-background p-2">
+            <h3 class="card-title second-dark-background">Workday Scheduler</h3>
+            <p class="card-text second-dark-background">HTML/CSS/Javascript</p>
           </div>
-          <div class="card project col-sm-12 col-md-6 px-4">
-            <img
-              src="./assets/images/Cheetsheet.png"
-              class="img-fluid card-img-top"
-              alt="Image of First Project: CSS Cheat Sheet"
-            />
-            <div class="card-body">
-              <h5 class="card-title">CSS Cheat Sheet</h5>
-              <p class="card-text">HTML/CSS</p>
-            </div>
+        </a>
+        <a
+          class="card mt-4"
+          href="https://github.com/heatherknoyes/CSSCheatSheet"
+        >
+          <img
+            src="./assets/images/Cheetsheet.png"
+            class="img-fluid"
+            alt="Image of First Project: CSS Cheat Sheet"
+          />
+          <div class="custom-card-footer second-dark-background p-2">
+            <h3 class="card-title second-dark-background">CSS Cheat Sheet</h3>
+            <p class="card-text second-dark-background">HTML/CSS</p>
           </div>
-          <div class="card project col-sm-12 col-md-6 px-4">
-            <img
-              src="./assets/images/WeatherDashboardGIF.gif"
-              class="img-fluid card-img-top"
-              alt="Image of Weather Dashboard application"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Weather Dashboard</h5>
-              <p class="card-text">HTML/CSS, Javascript, Bootstrap</p>
-            </div>
+        </a>
+        <a
+          class="card mt-4"
+          href="https://github.com/heatherknoyes/WeatherDashboard"
+        >
+          <img
+            src="./assets/images/WeatherDashboardGIF.gif"
+            class="img-fluid"
+            alt="Image of Weather Dashboard application"
+          />
+          <div class="custom-card-footer second-dark-background p-2">
+            <h3 class="card-title second-dark-background">Weather Dashboard</h3>
+            <p class="card-text second-dark-background">
+              HTML/CSS, Javascript, Bootstrap
+            </p>
           </div>
-        </div>
+        </a>
       </section>
 
       <!--Holds all links and contact information-->
@@ -197,14 +241,10 @@
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
     ></script>
+    <!-- JavaScript Bundle with Popper -->
     <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
   </body>
